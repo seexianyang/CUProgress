@@ -34,4 +34,3 @@ installed.
 `cd client`
 - you have to install all dependencies here too.
 `npm install`
->>>>>>> 416a38163ed3dd22cc3112284d6695c47bcff17c
