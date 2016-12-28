@@ -1,32 +1,15 @@
 ## Welcome to CU PROGRESS APP
 
-### Markdown
-
-fdsasda
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pk359/CUProgress/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### GET STARTED
+- clone or download this repo
+- cd into CUProgress folder
+- now you need to install dependencies by typing 
+## npm install
+- now install the bower components. but make sure you have bower installed globally by typing
+## npm install bower -g
+- make sure you are still in CUProgress folder
+## bower install bootstrap --save
+- now cd into client folder
+## cd client
+- you have to install all dependencies here too.
+## npm install
