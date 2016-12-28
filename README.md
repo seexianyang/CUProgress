@@ -3,9 +3,10 @@
 Before we get started, know this.
 
 - You need to have
-1. Nodejs
-2. Git
-3. Bower
+### Nodejs
+### Git
+### Bower
+- installed.
 - Node.js is a package manager to install backend node-modules. check your node version by typing 
 `node -v` 
 - and check npm version by typing 
