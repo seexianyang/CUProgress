@@ -40,6 +40,9 @@ export class StudentEditComponent {
             .subscribe(s => {
               this.studentList.push(s);
             })
+            for (var key in this.newStudent){
+                this.newStudent[key] = undefined;
+            }
         }
     }
 
