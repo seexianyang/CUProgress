@@ -1,8 +1,6 @@
 ## Welcome to CU PROGRESS APP
 
-Before we get started, know this.
-
-- You need to have
+Before we get started, know this. You need to have
 `Nodejs`
 `Git`
 `Bower`
