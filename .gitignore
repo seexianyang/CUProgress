@@ -1,0 +1,4 @@
+/client/**/*.js
+/client/**/*.js.map
+**/node_modules
+**/bower_components
