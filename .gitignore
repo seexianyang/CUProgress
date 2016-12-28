@@ -2,3 +2,5 @@
 /client/**/*.js.map
 **/node_modules
 **/bower_components
+npm-debug.log
+/client/npm-debug.log
