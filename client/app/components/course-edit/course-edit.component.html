@@ -5,10 +5,10 @@
             value="">
         <label for="courseName">Course Name</label><input type="text" [(ngModel)]="newCourse.courseName" name="courseName"
             class="form-control" value="">
-        <label for="startDate">Start Date</label> <input type="date" [(ngModel)]="newCourse.startDate" name="startDate" class="form-control"
-            value="">
-        <label for="endDate">End Date</label><input type="date" [(ngModel)]="newCourse.endDate" name="endDate" class="form-control"
-            value="">
+        <label for="startDate">Start Date</label>
+        <input type="text" [(ngModel)]="newCourse.startDate" name="startDate" class="form-control" value="">
+        <label for="endDate">End Date</label>
+        <input type="text" [(ngModel)]="newCourse.endDate" name="endDate" class="form-control" value="">
         <input type="submit" name="Submit" value="Submit" class="btn-primary pull-right">
     </div>
 </form>
@@ -44,3 +44,9 @@
         </table>
     </div>
 </div>
+<script>
+    $(function () {
+        $("input[name='startDate']").datepicker();
+        $("input[name='endDate']").datepicker();
+    });
+</script>
