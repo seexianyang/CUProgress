@@ -21,7 +21,7 @@ export class CourseEditComponent {
         for(var key in this.newCourse){
             console.log(this.newCourse[key]);
             if(key in this.optionalAttributes == false && this.newCourse[key] == undefined){
-                alert(key + " is not optional.")
+                alert(key + " is not optional.");
                 return false;
             }
         }
