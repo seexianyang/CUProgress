@@ -1,6 +1,6 @@
 export class Course{
-    courseId  :string;
-    courseName:string;
-    startDate   :Date;
-    endDate     :Date;
+    courseId  :string = undefined;
+    courseName:string = undefined;
+    startDate   :Date = undefined;
+    endDate     :Date = undefined;
 }

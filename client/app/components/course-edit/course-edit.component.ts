@@ -25,6 +25,7 @@ export class CourseEditComponent {
                 return false;
             }
         }
+        console.log(this.newCourse);
         return true;
     }
     refreshList(){
@@ -46,7 +47,7 @@ export class CourseEditComponent {
             for (var key in this.newCourse){
                 this.newCourse[key] = undefined;
             }
-        } 
+        }
     }
 
     removeCourse(id: string){
