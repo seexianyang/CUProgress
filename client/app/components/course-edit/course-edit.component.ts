@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {Course} from '../../models/Course'
-import {GeneralService} from '../../services/generalService'
+import {GeneralService} from '../../services/generalService';
 
 @Component({
     moduleId: module.id,
@@ -16,7 +16,7 @@ export class CourseEditComponent {
     constructor(private GeneralService:GeneralService){
          this.refreshList();
     }
-   
+
     validate(){
         for(var key in this.newCourse){
             console.log(this.newCourse[key]);
@@ -35,7 +35,9 @@ export class CourseEditComponent {
     }
 
     addCourse(event: any){
+        console.log('inside add course.');
         if(this.validate()){
+            console.log('valid');
             event.preventDefault();
             this.GeneralService.addObject(this.dataName, this.newCourse)
             .subscribe(s => {
@@ -44,8 +46,7 @@ export class CourseEditComponent {
             for (var key in this.newCourse){
                 this.newCourse[key] = undefined;
             }
-        }
-        
+        } 
     }
 
     removeCourse(id: string){

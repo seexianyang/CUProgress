@@ -1,0 +1,22 @@
+{
+  "name": "mean-stack-test",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Prem Kumra <siwbay@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/pk359/CUProgress",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "Ionicons": "ionicons#^2.0.1"
+  }
+}

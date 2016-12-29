@@ -16,6 +16,5 @@ export class AppComponent {
             this.pages[key] = false;
         }
         this.pages[page] = true;
-        console.log(this.pages);
     }
 }

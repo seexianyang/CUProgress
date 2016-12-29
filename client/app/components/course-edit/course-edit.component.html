@@ -1,15 +1,17 @@
 <!--component html goes here -->
 <form class="well" (submit)="addCourse($event)">
     <div class="form-group">
-        <label for="courseId">Course ID</label><input type="text" [(ngModel)]="newCourse.courseId" name="courseId" class="form-control"
-            value="">
-        <label for="courseName">Course Name</label><input type="text" [(ngModel)]="newCourse.courseName" name="courseName"
-            class="form-control" value="">
+        <label for="courseId">Course ID</label>
+        <input type="text" [(ngModel)]="newCourse.courseId" name="courseId" class="form-control">
+        <label for="courseName">Course Name</label>
+        <input type="text" [(ngModel)]="newCourse.courseName" name="courseName"
+            class="form-control" >
         <label for="startDate">Start Date</label>
-        <input type="text" [(ngModel)]="newCourse.startDate" name="startDate" class="form-control" value="">
+        <input type="date" [(ngModel)]="newCourse.startDate" name="startDate" class="form-control datepicker" >
         <label for="endDate">End Date</label>
-        <input type="text" [(ngModel)]="newCourse.endDate" name="endDate" class="form-control" value="">
+        <input type="date" [(ngModel)]="newCourse.endDate" name="endDate" class="form-control datepicker" >
         <input type="submit" name="Submit" value="Submit" class="btn-primary pull-right">
+       
     </div>
 </form>
 <div class="course-list">
@@ -44,9 +46,3 @@
         </table>
     </div>
 </div>
-<script>
-    $(function () {
-        $("input[name='startDate']").datepicker();
-        $("input[name='endDate']").datepicker();
-    });
-</script>
