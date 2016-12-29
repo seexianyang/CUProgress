@@ -19,7 +19,7 @@ export class CourseEditComponent {
     constructor(private GeneralService: GeneralService) {
         this.form = new GeneralObjForm(GeneralService, this.courseList, this.newCourse, this.dataName, this.optionalAttributes);
     }
-
+    colors : string[] =['#d5dbdb', '#edbb99', '#fad7a0' ,'#a2d9ce', '#aed6f1', '#d2b4de'];
     getColor(i: number): string{
         return this.colors[i% 6];
     }
