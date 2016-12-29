@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {Course} from '../../models/Course'
+import {Course} from '../../models/Course';
 import {GeneralObjForm} from '../../models/GeneralObjForm'
 import {GeneralService} from '../../services/generalService';
 
@@ -15,7 +15,12 @@ export class CourseEditComponent {
     dataName: string = 'course';
     optionalAttributes: string[] = [];
     form: GeneralObjForm;
+   
     constructor(private GeneralService: GeneralService) {
         this.form = new GeneralObjForm(GeneralService, this.courseList, this.newCourse, this.dataName, this.optionalAttributes);
+    }
+
+    getColor(i: number): string{
+        return this.colors[i% 6];
     }
 }

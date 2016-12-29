@@ -13,34 +13,34 @@
     </div>
 </form>
 <div class="course-list">
-    <div *ngFor="let course of courseList">
-        <hr>
-        <h3>
-            {{course.courseName}}
-            <button type="" class="btn btn-danger pull-right" name="button" (click)="form.remove(course._id)">Delete</button>
-        </h3>
-        <hr>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Course ID</th>
-                    <th>Start Date</th>
-                    <th>End Date</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="info">
-                    <td>
-                        <h5>{{course.courseId}}</h5>
-                    </td>
-                    <td>
-                        <h5>{{course.startDate}}</h5>
-                    </td>
-                    <td>
-                        <h5>{{course.endDate}}</h5>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Course Name</th>
+                <th>Course ID</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr [ngStyle]="{'background-color': getColor(i)}" *ngFor="let course of courseList; let i = index">
+                <td>
+                    <h4>{{course.courseName}}</h4>
+                </td>
+                <td>
+                    <h5>{{course.courseId}}</h5>
+                </td>
+                <td>
+                    <h5>{{course.startDate}}</h5>
+                </td>
+                <td>
+                    <h5>{{course.endDate}}</h5>
+                </td>
+                <td>
+                    <button type="" class="btn btn-danger pull-right" name="button" (click)="form.remove(course._id)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </div>

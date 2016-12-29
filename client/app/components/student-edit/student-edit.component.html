@@ -16,7 +16,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr class="info" *ngFor="let student of studentList">
+            <tr [ngStyle]="{'background-color': getColor(i)}" *ngFor="let student of studentList; let i=index;">
                 <td>
                     <h5>{{student.firstName}} {{student.lastName}}</h5>
                 </td>
