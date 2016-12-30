@@ -7,7 +7,7 @@ import {DatePickerModule} from 'ng2-datepicker';
     moduleId: module.id,
     selector: 'course-edit',
     templateUrl: 'course-edit.component.html',
-    styleUrls: ['assets/css/forms.css']
+    styleUrls: ['course-edit.component.css']
 })
 export class CourseEditComponent {
     newCourse: Course = new Course();
