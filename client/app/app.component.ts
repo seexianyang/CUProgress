@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import {TaskService} from './services/task.service'
 import {GeneralService} from './services/generalService'
+import {Menu} from './ui/menu-ui/menu-ui';
 @Component({
   moduleId: module.id,
   selector: 'my-app',
   templateUrl: 'app.component.html',
+  styleUrls: ['menu-style.css']
   providers: [TaskService,GeneralService]
 })
 export class AppComponent {

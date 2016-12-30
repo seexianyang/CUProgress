@@ -1,6 +1,7 @@
-/client/**/*.js
 /client/**/*.js.map
+/client/**/*.js
 **/node_modules
 **/bower_components
 npm-debug.log
 /client/npm-debug.log
+.DS_Store

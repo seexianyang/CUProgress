@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import {Student} from '../../models/Student'
 import {GeneralService} from '../../services/generalService'
 import {GeneralObjForm} from '../../models/GeneralObjForm'
-
 @Component({
     moduleId: module.id,
     selector: 'student-edit',
