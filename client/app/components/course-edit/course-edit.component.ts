@@ -2,7 +2,6 @@ import {Component} from '@angular/core';
 import {Course} from '../../models/Course';
 import {GeneralObjForm} from '../../models/GeneralObjForm'
 import {GeneralService} from '../../services/generalService';
-import {DatePickerModule} from 'ng2-datepicker';
 @Component({
     moduleId: module.id,
     selector: 'course-edit',

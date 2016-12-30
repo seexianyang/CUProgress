@@ -12,17 +12,18 @@
     </label>
     <label>
         <span>Start date :</span>
-      <ng2-datepicker [(ngModel)]="newCourse.startDate" [ngModelOptions]="{standalone: true}"></ng2-datepicker>
+      <input placeholder="enter course start date" type="text" onfocus="(this.type='date')" [(ngModel)]="newCourse.startDate" name="startDate">
     </label>
     <label>
         <span>End Date :</span>
-        <ng2-datepicker [(ngModel)]="newCourse.endDate" [ngModelOptions]="{standalone: true}"></ng2-datepicker>
+        <input placeholder="enter course end date" type="text" onfocus="(this.type='date')" [(ngModel)]="newCourse.endDate" name="endDate">
     </label>
     <label>
         <span>&nbsp;</span>
         <input type="submit" class="button" value="Submit" />
     </label>
 </form>
+
 <div class="course-list">
     <table class="table">
         <thead>
