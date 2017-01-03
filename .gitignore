@@ -1,6 +1,6 @@
 /client/**/*.js.map
 /client/**/*.js
-!/client/systemjs.config.js
+!client/systemjs.config.js
 **/node_modules
 **/bower_components
 npm-debug.log
