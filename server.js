@@ -26,8 +26,8 @@ app.use(bodyPaser.urlencoded({
 
 app.use('/', index);
 app.use('/api', tasks);
-app.use('/Gapi', generalAPI)
-app.use('/models', express.static('client/models'))
+app.use('/Gapi', generalAPI);
+app.use('/models', express.static('client/models'));
 
 app.listen(port, function() {
     console.log("sever started on port " + port);

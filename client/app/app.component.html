@@ -1,16 +1,10 @@
 <div class="container">
-    <div class="row">
-        <div class="col-sm-3 col-md-3 col-lg-3">
-            <img src="./assets/image/CU_logo.png" alt="" width="300" height="89" >
-        </div>
-        <div class="col-sm-9 col-md-9 col-lg-9">
-            <ul id="nav" class="nav navbar pull-right">
-                <li (click)="show('student')"><a href="#">Student</a></li>
-                <li (click)="show('course')"><a href="#">Course</a></li>
-                <li (click)="show('module')"><a href="#">Module</a></li>
-            </ul>
-        </div>
-    </div>
+    <img style="text-align: center" src="./assets/image/CU_logo.png" alt="" width="300" height="89">
+    <ul id="nav" class="nav navbar">
+        <li (click)="show('student')"><a href="#">Student</a></li>
+        <li (click)="show('course')"><a href="#">Course</a></li>
+        <li (click)="show('module')"><a href="#">Module</a></li>
+    </ul>
     <hr>
     <student-edit *ngIf="pages.student"></student-edit>
     <course-edit *ngIf="pages.course"></course-edit>
