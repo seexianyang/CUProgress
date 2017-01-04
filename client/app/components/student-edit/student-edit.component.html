@@ -16,7 +16,7 @@
     </label>
     <label>
         <span>&nbsp;</span>
-        <input type="submit" class="button" value="Submit" />
+        <input type="submit" class="button accent-color" value="Submit" />
     </label>
 </form>
 <div class="student-list">
@@ -28,7 +28,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr [ngStyle]="{'background-color': getColor(i)}" *ngFor="let student of studentList; let i=index;">
+            <tr [ngStyle]="{'border': '.5px solid black'}" *ngFor="let student of studentList; let i=index;">
                 <td>
                     <h4>{{student.firstName}} {{student.lastName}}</h4>
                 </td>

@@ -1,11 +1,21 @@
-<div class="container">
-    <img style="text-align: center" src="./assets/image/CU_logo.png" alt="" width="300" height="89">
-    <ul id="nav" class="nav navbar">
-        <li (click)="show('student')"><a href="#">Student</a></li>
-        <li (click)="show('course')"><a href="#">Course</a></li>
-        <li (click)="show('module')"><a href="#">Module</a></li>
-    </ul>
-    <hr>
-    <student-edit *ngIf="pages.student"></student-edit>
-    <course-edit *ngIf="pages.course"></course-edit>
-</div>
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+            <a class="navbar-brand" href="#">CUProgress</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav pull-right">
+                <li class="active" (click)="show('student')"><a href="#">Student</a></li>
+                <li (click)="show('course')"><a href="#">Course</a></li>
+                <li (click)="show('module')"><a href="#">Module</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<student-edit *ngIf="pages.student"></student-edit>
+<course-edit *ngIf="pages.course"></course-edit>

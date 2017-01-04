@@ -1,7 +1,9 @@
 var express = require('express');
 var router = express.Router();
 var mongojs = require('mongojs');
-var db = mongojs("mongodb://dexter:123456@ds135818.mlab.com:35818/ucproject", ['root']);
+//var db = mongojs("mongodb://dexter:123456@ds135818.mlab.com:35818/ucproject", ['root']);
+
+var db = mongojs('mongodb://localhost:27017/cup')
 
 //Get All
 router.get('/find/:collectionName', function(req, res, next) {
