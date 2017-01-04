@@ -3,9 +3,9 @@ import {Component} from '@angular/core';
 })
 export class NittyGritty{
 
-    colors : string[] =['#FFECB3','#FFA000', '#FFC107'];
+    colors : string[] =['#FFECB3'];
     
     getColor(i: number): string{
-        return this.colors[i% 3];
+        return this.colors[i% 2];
     }
 }

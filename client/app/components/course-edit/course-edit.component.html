@@ -1,27 +1,16 @@
-<form (submit)="form.add($event)" class="white-pink">
+<form (submit)="form.add($event)" class="yellow-grey light-primary-color">
     <h1>Add course
-        <span>Please fill all the texts in the fields.</span>
     </h1>
     <label>
-        <span>Course ID :</span>
+        <span>ID :</span>
         <input type="text" [(ngModel)]="newCourse.courseId" name="courseId" placeholder="Enter course id" />
     </label>
     <label>
-        <span>Course name :</span>
+        <span>Name :</span>
         <input type="text" [(ngModel)]="newCourse.courseName" name="courseName" placeholder="Descriptive course name" />
     </label>
-    <label>
-        <span>Start date :</span>
-      <input placeholder="enter course start date" type="text" onfocus="(this.type='date')" [(ngModel)]="newCourse.startDate" name="startDate">
-    </label>
-    <label>
-        <span>End Date :</span>
-        <input placeholder="enter course end date" type="text" onfocus="(this.type='date')" [(ngModel)]="newCourse.endDate" name="endDate">
-    </label>
-    <label>
-        <span>&nbsp;</span>
-        <input type="submit" class="button" value="Submit" />
-    </label>
+        <input type="submit" class="btn" value="Submit" />
+    
 </form>
 
 <div class="course-list">
@@ -30,24 +19,16 @@
             <tr>
                 <th>Course Name</th>
                 <th>Course ID</th>
-                <th>Start Date</th>
-                <th>End Date</th>
                 <th></th>
             </tr>
         </thead>
         <tbody>
-            <tr [ngStyle]="{'background-color': getColor(i)}" *ngFor="let course of courseList; let i = index">
+            <tr  *ngFor="let course of courseList; let i = index">
                 <td>
                     <h4>{{course.courseName}}</h4>
                 </td>
                 <td>
                     <h5>{{course.courseId}}</h5>
-                </td>
-                <td>
-                    <h5>{{course.startDate}}</h5>
-                </td>
-                <td>
-                    <h5>{{course.endDate}}</h5>
                 </td>
                 <td>
                     <button type="" class="btn btn-danger pull-right" name="button" (click)="form.remove(course._id)">Delete</button>

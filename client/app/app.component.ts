@@ -4,7 +4,6 @@ import {GeneralService} from './services/generalService'
   moduleId: module.id,
   selector: 'my-app',
   templateUrl: 'app.component.html',
-  //styleUrls: ['menu-style.css'],
   providers: [GeneralService]
 })
 export class AppComponent {

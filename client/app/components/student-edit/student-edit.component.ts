@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {Student} from '../../models/Student'
 import {GeneralService} from '../../services/generalService'
 import {GeneralObjForm} from '../../models/GeneralObjForm'
+import {NittyGritty} from '../../models/NittyGritty'
 @Component({
     moduleId: module.id,
     selector: 'student-edit',
@@ -16,6 +17,4 @@ export class StudentEditComponent {
     constructor(private GeneralService: GeneralService) {
         this.form = new GeneralObjForm(GeneralService, this.studentList, this.newStudent, this.dataName, this.optionalAttributes);
     }
-    
-    
 }

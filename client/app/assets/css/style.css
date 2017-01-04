@@ -11,12 +11,9 @@
 .primary-text-color    { color: #212121; }
 .secondary-text-color  { color: #757575; }
 
-
-
 /* Form styling begins here */
-/* ###### White / Pink #########*/
-
-.white-pink {
+.yellow-grey {
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     max-width: 500px;
@@ -28,25 +25,19 @@
     -webkit-border-radius: 10px;
 }
 
-.white-pink h1 {
+.yellow-grey h1 {
     font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
     padding: 0px 0px 10px 40px;
     display: block;
     border-bottom: 1px solid #F5F5F5;
     margin: -10px -30px 10px -30px;
 }
-
-.white-pink h1>span {
-    display: block;
-    font-size: 11px;
-}
-
-.white-pink label {
+.yellow-grey label {
     display: block;
     margin: 0px 0px 5px;
 }
 
-.white-pink label>span {
+.yellow-grey label>span {
     float: left;
     width: 20%;
     text-align: right;
@@ -54,53 +45,28 @@
     margin-top: 10px;
 }
 
-.white-pink input[type="text"],
-.white-pink input[type="email"],
-.white-pink textarea,
-.white-pink select {
+.yellow-grey input[type="text"],
+.yellow-grey textarea {
     width: 70%;
     padding: 3px 0px 3px 5px;
     margin-top: 2px;
     margin-right: 6px;
     margin-bottom: 16px;
-    border: 1px solid #e5e5e5;
-    height: 25px;
     line-height: 15px;
     outline: 0;
-    -webkit-box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0.2);
-    box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0.2);
 }
 
-.white-pink textarea {
+.yellow-grey textarea {
     height: 100px;
     padding: 5px 0px 0px 5px;
     width: 70%;
 }
-
-.white-pink .button {
-   
-    
-    border-radius: 9px;
-    -webkit-border-radius: 9px;
-    -moz-border-border-radius: 9px;
-    border: 1px solid #C4C2C2;
-    display: inline-block;
-    font-family: Arial;
-    font-size: 15px;
-    font-weight: bold;
-    font-style: normal;
-    height: 40px;
-    line-height: 30px;
-    width: 100px;
-    text-decoration: none;
-    text-align: center;
-}
-.white-pink .button:active {
+.yellow-grey .button:active {
     position: relative;
     top: 1px;
 }
 
-.white-pink select {
+.yellow-grey select {
     -webkit-appearance: none;
     -moz-appearance: none;
     text-indent: 0.01px;
@@ -108,4 +74,72 @@
     width: 70%;
     line-height: 15px;
     height: 30px;
+}
+
+/*
+ Listing style is here
+*/
+table{
+    margin-top: 40px;
+}
+thead{
+    background: #FFECB3;
+}
+tbody > tr:hover {
+	background-color: white;
+	color: #a2521d;
+}
+
+/*
+Menu styling
+*/
+#menu {
+     margin: 0;
+     width: auto;
+     background-color: #565656;
+     font-size: 16px;
+     font-family: Tahoma, Geneva, sans-serif;
+     font-weight: bold;
+     text-align: left;
+     padding: 8px;
+     border-radius: 8px;
+     -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+     -o-border-radius: 8px;
+}
+
+#menu ul {
+     margin: 0;
+     padding: 8px 0;
+     list-style: none;
+     height: auto;
+}
+
+#menu li {
+     display: inline;
+     padding: 8px;
+}
+
+#menu a {
+     color: #FFF;
+     padding: 10px;
+     text-decoration: none;
+}
+
+#menu a:hover {
+     background-color: #1B191B;
+     color: #FFF;
+     border-radius: 20px;
+     -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+     -o-border-radius: 20px;
+}
+
+#menu li .active {
+     background-color: #1B191B;
+     color: #FFF;
+     border-radius: 20px;
+     -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+     -o-border-radius: 20px;
 }
