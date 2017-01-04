@@ -1,4 +1,4 @@
-<form (submit)="form.add($event)" class="yellow-grey light-primary-color">
+<form (submit)="form.add($event)" class="yellow-grey">
     <h1>Add student
     </h1>
     <label>
@@ -13,9 +13,12 @@
         <span>Last name :</span>
     		<input type="text" [(ngModel)]="newStudent.lastName" name="lastName" placeholder="Enter student's lastName">
     </label>
-    <input type="submit" class="btn" value="Submit" />
+    <label>
+        <span></span>
+         <input type="submit" class="btn" value="Submit" />
+    </label>
 </form>
-<div class="student-list divider-color">
+<div class="student-list">
     <table class="table">
         <thead>
             <tr>
@@ -25,7 +28,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let student of studentList; let i=index;">
+            <tr *ngFor="let student of studentList;">
                 <td>
                     <h4>{{student.firstName}} {{student.lastName}}</h4>
                 </td>
