@@ -61,7 +61,6 @@ router.delete('/remove/:collectionName/:id', function(req, res, next) {
         })
 })
 
-//Update tasks
 router.put('/update/:collectionName/:id', function(req, res, next) {
     var obj = req.body;
     var newObj = JSON.parse(JSON.stringify(obj));
