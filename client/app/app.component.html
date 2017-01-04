@@ -1,9 +1,12 @@
 <div id="menu">
     <ul>
+        <img src="app/assets/image/logo.png">
         <li class="active" (click)="show('student')"><a href="#">Student</a></li>
         <li (click)="show('module')"><a href="#">Module</a></li>
         <li (click)="show('course')"><a href="#">Course</a></li>
     </ul>
 </div>
-<student-edit *ngIf="pages.student"></student-edit>
-<course-edit *ngIf="pages.course"></course-edit>
+<div class="container">
+    <student-edit *ngIf="pages.student"></student-edit>
+    <course-edit *ngIf="pages.course"></course-edit>
+</div>

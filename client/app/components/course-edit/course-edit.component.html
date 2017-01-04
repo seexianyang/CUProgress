@@ -9,10 +9,7 @@
         <span>Name :</span>
         <input type="text" [(ngModel)]="newCourse.courseName" name="courseName" placeholder="Descriptive course name" />
     </label>
-    <label>
-        <span></span>
         <input type="submit" class="btn" value="Submit" />
-    </label>
 </form>
 <div class="course">
     <div class="card" *ngFor="let course of courseList; let i = index">
