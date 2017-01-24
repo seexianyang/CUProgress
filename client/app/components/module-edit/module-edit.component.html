@@ -1,0 +1,85 @@
+<form (submit)="form.add($event)" class="yellow-grey  primary-color">
+    <h1>Add module
+    </h1>
+    <label>
+        <span>ID :</span>
+        <input type="text" [(ngModel)]="newModule.moduleid" name="moduleid" placeholder="Enter Module id" />
+    </label>
+    <label>
+        <span>Name :</span>
+        <input type="text" [(ngModel)]="newModule.moduleName" name="moduleName" placeholder="Enter Module name" />
+    </label>
+        <label>
+        <span>Mod_Summary:</span>
+        <input type="text" [(ngModel)]="newModule.Mod_Summary" name="Mod_Summary" placeholder="Enter Mod_Summary" />
+    </label>
+        <label>
+        <span>Mod_Size :</span>
+        <input type="text" [(ngModel)]="newModule.Mod_Size" name="Mod_Size" placeholder="Enter Mod_size" />
+    </label>
+        <label>
+        <span>CATSPoint :</span>
+        <input type="text" [(ngModel)]="newModule.CATS_Point" name="CATS_Point" placeholder="Enter CATS_Point" />
+    </label>
+        <label>
+        <span>ECTSCredit :</span>
+        <input type="text" [(ngModel)]="newModule.ECTS_Credits" name="ECTS_Credits" placeholder="Enter ECTS_Credits" />
+    </label>
+        <label>
+        <span>T_StudyHr :</span>
+        <input type="text" [(ngModel)]="newModule.Total_StudyHr" name="Total_StudyHour" placeholder="Enter Total_StudyHour" />
+    </label>
+        <label>
+        <span>T_LearnWk :</span>
+        <input type="text" [(ngModel)]="newModule.Total_Learnweek" name="Total_LearnWeek" placeholder="Enter Total_learningWeek" />
+    </label>
+        <input type="submit" class="btn" value="Submit" />
+</form>
+<div class="module-list">
+    <table class="table">
+        <thead class="primary-color"> 
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Mod Summary</th>
+                <th>Mod Size</th>
+                <th>CATS Point</th>
+                <th>ETCS Point</th>
+                <th>Total StudyHour</th>
+                <th>Total LearningWeek</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let module of moduleList;">
+                <td>
+                    <h5>{{module.moduleid}}</h5>
+                </td>
+                <td>
+                    <h5>{{module.moduleName}}</h5>
+                </td>
+                <td>
+                    <h5>{{module.Mod_Summary}}</h5>
+                 </td>   
+                 <td>
+                     <h5>{{module.Mod_Size}}</h5>
+                     </td>
+                     <td>
+                         <h5>{{module.CATS_Point}}</h5>
+                         </td>
+                     <td>
+                         <h5>{{module.ECTS_Credits}}</h5>
+                         </td>    
+                         <td>
+                             <h5>{{module.Total_StudyHr}}</h5>
+                             </td>
+                         <td>
+                             <h5>{{module.Total_Learnweek}}</h5>
+                         </td>    
+                <td>
+                    <button type="" class="btn btn-danger pull-right" name="button" (click)="form.remove(module._id)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
